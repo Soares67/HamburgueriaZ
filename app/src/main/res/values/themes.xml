@@ -1,0 +1,42 @@
+<resources>
+    <!-- Tema base do app -->
+    <style name="Theme.HamburgueriaZ" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/marromEscuro</item>
+        <item name="colorPrimaryVariant">@color/marromMedio</item>
+        <item name="colorOnPrimary">@color/branco</item>
+
+        <item name="colorSecondary">@color/laranja</item>
+        <item name="colorOnSecondary">@color/branco</item>
+
+        <item name="android:statusBarColor">@color/marromMedio</item>
+        <item name="android:windowBackground">@color/fundoClaro</item>
+
+        <!-- Estilo global de fonte -->
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+
+        <!-- Botão Material moderno -->
+        <item name="materialButtonStyle">@style/ModernButton</item>
+    </style>
+
+    <!-- Estilo de texto reaproveitável -->
+    <style name="EstiloTexto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/marromEscuro</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <!-- Botão moderno -->
+    <style name="ModernButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/laranja</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+</resources>

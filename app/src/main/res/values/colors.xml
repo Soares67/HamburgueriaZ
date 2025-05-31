@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="marromEscuro">#5D4037</color>
+    <color name="marromMedio">#8D6E63</color>
+    <color name="laranja">#FF7043</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="fundoClaro">#FFF8F0</color>
+</resources>

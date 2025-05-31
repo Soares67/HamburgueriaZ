@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fa_a_seu_pedido"
+            style="@style/EstiloTexto"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etNomeCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/digite_seu_nome"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tvAdicionais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/escolha_os_adicionais"
+            style="@style/EstiloTexto"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cbBacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bacon_r_2" />
+
+        <CheckBox
+            android:id="@+id/cbQueijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/queijo_r_2" />
+
+        <CheckBox
+            android:id="@+id/cbOnion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onion_rings_r_3" />
+
+        <TextView
+            android:id="@+id/tvQuantidadeTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantidade"
+            style="@style/EstiloTexto"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnMenos"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/less" />
+
+            <TextView
+                android:id="@+id/tvQuantidade"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnMais"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/more" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resumo_do_pedido"
+            style="@style/EstiloTexto"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="#EEEEEE" />
+
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_r_0_00"
+            style="@style/EstiloTexto"
+            android:layout_marginTop="16dp" />
+
+
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar_pedido"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
